@@ -13,7 +13,7 @@ March = 31
 April = 30
 May = 31
 June = 30
-july = 31
+July = 31
 August = 31
 September = 30
 October = 31
@@ -29,7 +29,7 @@ months = {  1 : January,                                    #Python Dictionarie 
             4 : April,
             5 : May,
             6 : June,
-            7 : july,
+            7 : July,
             8 : August,
             9 : September,
             10 :October,

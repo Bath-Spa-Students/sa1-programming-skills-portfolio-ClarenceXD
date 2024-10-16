@@ -13,7 +13,7 @@ March = 31
 April = 30
 May = 31
 June = 30
-july = 31
+July = 31
 August = 31
 September = 30
 October = 31
@@ -29,7 +29,7 @@ months = {  1 : January,                                        #Python Dictiona
             4 : April,
             5 : May,
             6 : June,
-            7 : july,
+            7 : July,
             8 : August,
             9 : September,
             10 :October,
@@ -65,6 +65,6 @@ if userinput == 2:                                        #if the month is Febru
 
     elif leapyear == True:                                                        
         userinput = 13
-        print(f"It is a leap year days is {months.get(userinput)}.")        #if leapyear is True will print February(leap year)
+        print(f"It is a leap year, days is {months.get(userinput)}.")        #if leapyear is True will print February(leap year)
 else:
     print (f"The days is {months.get(userinput)}.")
