@@ -24,85 +24,71 @@ q8 = input("What is the capital of Belgium?: ")
 q9 = input("What is the capital of Netherlands?: ")
 q10 =input("What is the capital of Switzerland?: ")
 
-#converts all user input to lowercase 
+ 
+"""checks users inputs on each question each one that is correct adds a 1 to the counter variable
+.lower() converts all user input to lowercase allowing the code to not be case sensitive"""
 
-q1 = q1.lower()
-q2 = q2.lower()
-q3 = q3.lower()
-q4 = q4.lower()
-q5 = q5.lower()
-q6 = q6.lower()
-q7 = q7.lower()
-q8 = q8.lower()
-q9 = q9.lower()
-q10 = q10.lower()
-
-#checks users inputs on each question each one that is correct adds a 1 to the counter variable
-
-if q1== "paris":
+if q1.lower()== "paris":
     print ("The capital of France is Paris. Correct")
     counter +=1
 else:
     print ("The capital of France is Paris. Incorrect")
     
-if q2== "berlin":
+if q2.lower()== "berlin":
     print ("The capital of Germany is Berlin Correct")
     counter +=1
 else:
     print ("The capital of Germany is Berlin. Incorrect")
 
-if q3== "rome":
+if q3.lower()== "rome":
     print ("The capital of Italy is Rome. Correct")
     counter +=1
 else:
     print ("The capital of Italy is Rome. Incorrect")
 
-if q4== "madrid":
+if q4.lower()== "madrid":
     print ("The capital of Spainis Madrid. Correct")
     counter +=1
 else:
     print ("The capital of Spainis Madrid. Incorrect")
     
-if q5== "lisbon":
+if q5.lower()== "lisbon":
     print ("The capital of Portugal is Lisbon. Correct")
     counter +=1
 else:
     print ("The capital of Portugal is Lisbon. Incorrect")
 
-if q6== "athens":
+if q6.lower()== "athens":
     print ("The capital of Greece is Athens. Correct")
     counter +=1
 else:
     print ("The capital of Greece is Athens. Incorrect")
 
-if q7== "vienna":
+if q7.lower()== "vienna":
     print ("The capital of Austria is Vienna. Correct")
     counter +=1
 else:
     print ("The capital of Austria is Vienna. Incorrect")
 
-if q8== "brussels":
+if q8.lower()== "brussels":
     print ("The capital of Belgium is Brussels. Correct")
     counter +=1
 else:
     print ("The capital of Belgium is Brussels. Incorrect")
 
-if q9== "amsterdam":
+if q9.lower()== "amsterdam":
     print ("The capital of Netherlands is Amsterdam. Correct")
     counter +=1
 else:
     print ("The capital of Netherlands is Amsterdam. Incorrect")
 
-if q10== "bern":
+if q10.lower()== "bern":
     print ("The capital of Switzerland is Bern. Correct")
     counter +=1
 else:
     print ("The capital of Switzerland is Bern. Incorrect")
 
 print(f"you got {counter} out of 10 capitals correct")      #prints the total amount of correct answers using the counter variable
-
-
-
 
 
 """"The answers are the following:
