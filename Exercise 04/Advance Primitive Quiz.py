@@ -9,7 +9,7 @@
 Ignore Capitalization: Modify your program to accept answers regardless of the capitalization (e.g., "paris", "Paris", and "PaRis" should all be considered correct).
 Multiple Questions: Extend the program into a quiz that asks for the capitals of 10 European countries. Provide feedback for each question."""
 
-counter = 0                                                 #a counter used to keep track on how many answers are correct
+counter = 0                                                 #A counter used to keep track on how many answers are correct
 
 #List of the questions the user will be answering
 
@@ -24,72 +24,70 @@ q8 = input("What is the capital of Belgium?: ")
 q9 = input("What is the capital of Netherlands?: ")
 q10 =input("What is the capital of Switzerland?: ")
 
- 
 """checks users inputs on each question each one that is correct adds a 1 to the counter variable
 .lower() converts all user input to lowercase allowing the code to not be case sensitive"""
 
 if q1.lower()== "paris":
-    print ("The capital of France is Paris. Correct")
-    counter +=1
+    print ("\nThe capital of France is Paris. Correct")
+    counter +=1                                                         #for every correct answer will add 1 to the counter. Added \n to create a new line after each output
 else:
-    print ("The capital of France is Paris. Incorrect")
+    print ("\nThe capital of France is Paris. Incorrect")
     
 if q2.lower()== "berlin":
-    print ("The capital of Germany is Berlin Correct")
+    print ("\nThe capital of Germany is Berlin Correct")
     counter +=1
 else:
-    print ("The capital of Germany is Berlin. Incorrect")
+    print ("\nThe capital of Germany is Berlin. Incorrect")
 
 if q3.lower()== "rome":
-    print ("The capital of Italy is Rome. Correct")
+    print ("\nThe capital of Italy is Rome. Correct")
     counter +=1
 else:
-    print ("The capital of Italy is Rome. Incorrect")
+    print ("\nThe capital of Italy is Rome. Incorrect")
 
 if q4.lower()== "madrid":
-    print ("The capital of Spainis Madrid. Correct")
+    print ("\nThe capital of Spainis Madrid. Correct")
     counter +=1
 else:
-    print ("The capital of Spainis Madrid. Incorrect")
+    print ("\nThe capital of Spainis Madrid. Incorrect")
     
 if q5.lower()== "lisbon":
-    print ("The capital of Portugal is Lisbon. Correct")
+    print ("\nThe capital of Portugal is Lisbon. Correct")
     counter +=1
 else:
-    print ("The capital of Portugal is Lisbon. Incorrect")
+    print ("\nThe capital of Portugal is Lisbon. Incorrect")
 
 if q6.lower()== "athens":
-    print ("The capital of Greece is Athens. Correct")
+    print ("\nThe capital of Greece is Athens. Correct")
     counter +=1
 else:
-    print ("The capital of Greece is Athens. Incorrect")
+    print ("\nThe capital of Greece is Athens. Incorrect")
 
 if q7.lower()== "vienna":
-    print ("The capital of Austria is Vienna. Correct")
+    print ("\nThe capital of Austria is Vienna. Correct")
     counter +=1
 else:
-    print ("The capital of Austria is Vienna. Incorrect")
+    print ("\nThe capital of Austria is Vienna. Incorrect")
 
 if q8.lower()== "brussels":
-    print ("The capital of Belgium is Brussels. Correct")
+    print ("\nThe capital of Belgium is Brussels. Correct")
     counter +=1
 else:
-    print ("The capital of Belgium is Brussels. Incorrect")
+    print ("\nThe capital of Belgium is Brussels. Incorrect")
 
 if q9.lower()== "amsterdam":
     print ("The capital of Netherlands is Amsterdam. Correct")
     counter +=1
 else:
-    print ("The capital of Netherlands is Amsterdam. Incorrect")
+    print ("\nThe capital of Netherlands is Amsterdam. Incorrect")
 
 if q10.lower()== "bern":
     print ("The capital of Switzerland is Bern. Correct")
     counter +=1
 else:
-    print ("The capital of Switzerland is Bern. Incorrect")
+    print ("\nThe capital of Switzerland is Bern. Incorrect")
 
-print(f"you got {counter} out of 10 capitals correct")      #prints the total amount of correct answers using the counter variable
-
+print(f"\nYou got {counter} out of 10 capitals correct")      #prints the total amount of correct answers using the counter variable
 
 """"The answers are the following:
     q1 "Paris",
