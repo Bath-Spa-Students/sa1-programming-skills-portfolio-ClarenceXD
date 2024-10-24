@@ -7,6 +7,8 @@
 
 ### Advanced Requirement:
 Leap Year Adjustment: Modify the program to account for leap years. For February, ask the user if the year is a leap year and adjust the number of days accordingly."""
+
+#List of the months days in variables
 January = 31
 February = 28
 March = 31
@@ -20,10 +22,7 @@ October = 31
 November = 30
 December = 31
 
-
-#List of the months days in variables
-
-months = {  1 : January,                                    #Python Dictionarie used to store data
+months = {  1 : January,                                    #A python Dictonarie is used to store data with key:value in pairs of 2
             2 : February,
             3 : March,
             4 : April,
@@ -36,14 +35,14 @@ months = {  1 : January,                                    #Python Dictionarie 
             11 : November,
             12 : December}
 
-while True:
+while True:                                                                 #loop 
     try:
-        userinput= int(input("input a month 1-12: "))                   #lets the user pick a month depending on the input   
-        if 1 <= userinput <= 12:                                        #if the number of month is less then 1 or more then 12 will loop to enter another number
+        user_input= int(input("input a month 1-12: "))                      #Asks the user for the month
+        if 1 <= user_input <= 12:                                           #checks if the user_input is equal to 1 or 12 and not greater then 12 or less then 1 if the condition is not broken will break out of loop
             break
         else:
-            print ("Enter the number of the month 1-12: ")              
-    except ValueError:                     
-        print("Enter the number of the month 1-12: ")
+            print ("Enter the number of the month from 1 to 12")              
+    except ValueError:                                                      
+        print("Enter the number of the month from 1 to 12")
 
-print (f"The days is {months.get(userinput)}.")
+print (f"The days is {months.get(user_input)}.")

@@ -23,7 +23,7 @@ LFebruary = 29
 
 #List of the months days in variables
 
-months = {  1 : January,                                        #Python Dictionarie used to store data
+months = {  1 : January,                                        #A python Dictonarie is used to store data with key:value in pairs of 2
             2 : February,
             3 : March,
             4 : April,
@@ -37,34 +37,35 @@ months = {  1 : January,                                        #Python Dictiona
             12 : December,
             13 : LFebruary}
 
-while True:
+while True:                                                             
     try:
-        userinput= int(input("input a month 1-12: "))                   #lets the user pick a month depending on the input   
-        if 1 <= userinput <= 12:                                        #makes sure the user does not enter a number below 1 or above 12
+        user_input= int(input("input a month 1-12: "))                   #Asks the user for the month  
+        if 1 <= user_input <= 12:                                        #checks if the user_input is equal to 1 or 12 and not greater then 12 or less then 1 if the condition is not broken will break out of loop
             break
         else:
-            print ("Enter the number of the month 1-12: ")
-    except ValueError:                     
-        print("Enter the number of the month 1-12: ")
+            print ("Enter the number of the month from 1 to 12")
+    except ValueError:                                                  #if the user does not input a interger will print the following "Enter the number of the month 1-12: " and loop
+        print("Enter the number of the month from 1 to 12")
 
 
-if userinput == 2:                                        #if the month is February ask the user what year it is
+if user_input == 2:                                        #if the month is February ask the user what year it is
     year = int(input("What year is it: "))
     while True:
         year -=4
         if year == 4:
-            leapyear= True                                  #if year is = to 4 set leapyear to True
+            leapyear= True                                  #if the year is =(equal) to 4 set leapyear to True
             break
 
         elif year <=0:                                      #if year is <(less) then 4 set leapyear to False
             leapyear= False
             break
 
-    if leapyear == False:                                   #if leapyear is False will print February(nonleap year)
-        print(f"The days is {months.get(userinput)}.")
+    if leapyear == False:                                                           #if leapyear is False will print 28 days (non leap year)
+        print(f"It is not a leap year. The days is {months.get(user_input)}.")
 
     elif leapyear == True:                                                        
-        userinput = 13
-        print(f"It is a leap year, days is {months.get(userinput)}.")        #if leapyear is True will print February(leap year)
+        user_input = 13
+        print(f"It is a leap year. The days is {months.get(user_input)}.")          #if leapyear is True will print 29 days (leap year)
+
 else:
-    print (f"The days is {months.get(userinput)}.")
+    print (f"The days is {months.get(user_input)}.")
