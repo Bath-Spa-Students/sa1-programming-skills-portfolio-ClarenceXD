@@ -76,13 +76,13 @@ else:
     print ("\nThe capital of Belgium is Brussels. Incorrect")
 
 if q9.lower()== "amsterdam":
-    print ("The capital of Netherlands is Amsterdam. Correct")
+    print ("\nThe capital of Netherlands is Amsterdam. Correct")
     counter +=1
 else:
     print ("\nThe capital of Netherlands is Amsterdam. Incorrect")
 
 if q10.lower()== "bern":
-    print ("The capital of Switzerland is Bern. Correct")
+    print ("\nThe capital of Switzerland is Bern. Correct")
     counter +=1
 else:
     print ("\nThe capital of Switzerland is Bern. Incorrect")
