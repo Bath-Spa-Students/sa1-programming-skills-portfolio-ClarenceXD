@@ -17,7 +17,7 @@ attempt = 5                                                     #attempt left
 while True:                                                     #used to loop till either the access is granted or the authorities are alerted
     userinput = input("What is the password: ")
     
-    if userinput == "12345":                                    #check if the userinput is = to the passowrd
+    if userinput == password:                                    #check if the userinput is = to the passowrd
         print ("Access Granted")
         exit()                                  
     elif attempt == 1:
